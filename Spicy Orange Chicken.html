@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://ruhlman.com/wp-content/uploads/2016/10/spice-orange-chicken-e1476196881335.jpg">
+                            <img src="../Images/70f246d8-0457-41fe-8428-fe7a66b45239.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Spicy Orange Chicken</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://blog.ruhlman.com/2016/10/spicy-orange-chicken/>Blog.ruhlman.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>For the sauce:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient">Zest and juice from an orange</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup soy</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  rice wine vinegar (or lime juice)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup brown sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons hoisin sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon fish sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon vegetable oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  clove garlic minced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon grated ginger</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons chilli flakes</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>For the chicken:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  chicken breast cut into thin strips</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  egg white mixed with 1 tablespoon cornstarch (or flour)</li>
+                    <li itemprop="recipeIngredient" class="ingredient">Oil for frying</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>5</b>  whole dried red chillis</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  cloves garlic smashed and roughly chopped</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoons minced ginger</li>
+                    <li itemprop="recipeIngredient" class="ingredient">Scallions sliced on a bias, the white and about half the green</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Combine orange juice, soy, vinegar or lime juice, sugar, hoisin, and fish sauce and stir well.</p><p></p><p>Put the oil in a small sauce pan over medium high heat, then add the garlic, ginger and chilli flakes. Cook till softened. Add the sauce and simmer till reduced by about one-third.</p><p></p><p>Combine the chicken and egg white mixture.</p><p></p><p>In a skillet or wok over high, add the oil. When it’s rippling hot, lay the chicken in and cook till crisp, careful to keep each piece from sticking to others. Remove to a paper towel lined plate.</p><p></p><p>Pour off all but a couple of tablespoons of oil. Return it to the heat and add the chillis, cooking them till they’re black, about a minute. Add the garlic, ginger and half the scallions. Stir-fry till softened, another minute or so. Add the sauce and, when the sauce has come to a simmer, the chicken. Toss till well coated. Remove from the heat add the orange zest, stir, then serve, garnishing with the remaining scallion.</p><p></p><p>Serve with white rice and broccoli rapini blanched and stir-fried with garlic.</p><p></p><p>If you liked this post, take a look at these links:</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

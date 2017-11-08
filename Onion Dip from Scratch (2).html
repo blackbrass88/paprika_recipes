@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+
+            <h1 itemprop="name" class="name">Onion Dip from Scratch</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://altonbrown.com/onion-dip-recipe-from-scratch/>Altonbrown.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  tablespoons olive oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound onions, diced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon kosher salt, divided</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  cups sour cream</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  cup mayonnaise</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  teaspoon garlic powder</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  teaspoon white pepper, freshly ground</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>1. Place the oil, onions and 1/2 teaspoon salt in a 10-inch saute pan over medium heat.</p><p></p><p>2. Cook, stirring occasionally, until the onions are golden brown, about 20 minutes. Remove from the heat and set aside to cool for 15 minutes.</p><p></p><p>3. Place the remaining ingredients and the remaining 1/2 teaspoon salt in a medium mixing bowl, add the cooled onions and stir to combine.</p><p></p><p>4. Refrigerate for at least 1 hour and stir again before serving.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

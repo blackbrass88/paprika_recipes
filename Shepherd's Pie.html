@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/7/26/2/EA1206_shepherds-pie_s4x3.jpg.rend.sni12col.landscape.jpeg">
+                            <img src="../Images/ded12ae6-2651-47ea-a22e-7679a232eb3b.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Shepherd&#39;s Pie</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">45 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">45 min</span>
+                    <b>Servings: </b><span itemprop="recipeYield">Yield: 8 servings</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.foodnetwork.com/recipes/alton-brown/shepherds-pie-recipe2.html>Foodnetwork.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>For the potatoes:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  pounds russet potatoes</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup half-and-half</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  ounces unsalted butter</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  teaspoon kosher salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  teaspoon freshly ground black pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  egg yolk</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>For the meat filling:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons canola oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup chopped onion</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  carrots, peeled and diced small</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cloves garlic, minced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  pounds ground lamb</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon kosher salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon freshly ground black pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons all-purpose flour</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons tomato paste</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup chicken broth</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon Worcestershire sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons freshly chopped rosemary leaves</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon freshly chopped thyme leaves</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup fresh or frozen corn kernels</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup fresh or frozen English peas</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Peel the potatoes and cut into 1/2-inch dice. Place in a medium saucepan and cover with cold water. Set over high heat, cover and bring to a boil. Once boiling, uncover, decrease the heat to maintain a simmer and cook until tender and easily crushed with tongs, approximately 10 to 15 minutes. Place the half-and-half and butter into a microwave-safe container and heat in the microwave until warmed through, about 35 seconds. Drain the potatoes in a colander and then return to the saucepan. Mash the potatoes and then add the half and half, butter, salt and pepper and continue to mash until smooth. Stir in the yolk until well combined.</p><p></p><p>Preheat the oven to 400 degrees F.</p><p></p><p>While the potatoes are cooking, prepare the filling. Place the canola oil into a 12-inch saute pan and set over medium high heat. Once the oil shimmers, add the onion and carrots and saute just until they begin to take on color, approximately 3 to 4 minutes. Add the garlic and stir to combine. Add the lamb, salt and pepper and cook until browned and cooked through, approximately 3 minutes. Sprinkle the meat with the flour and toss to coat, continuing to cook for another minute. Add the tomato paste, chicken broth, Worcestershire, rosemary, thyme, and stir to combine. Bring to a boil, reduce the heat to low, cover and simmer slowly 10 to 12 minutes or until the sauce is thickened slightly.</p><p></p><p>Add the corn and peas to the lamb mixture and spread evenly into an 11 by 7-inch glass baking dish. Top with the mashed potatoes, starting around the edges to create a seal to prevent the mixture from bubbling up and smooth with a rubber spatula. Place on a parchment lined half sheet pan on the middle rack of the oven and bake for 25 minutes or just until the potatoes begin to brown. Remove to a cooling rack for at least 15 minutes before serving.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://www.rachelcooks.com/wp-content/uploads/2016/02/apple-gouda-stuffed-chicken-sheet-pan-dinner-600-9-of-11-180x180.jpg">
+                            <img src="../Images/704277c4-2e0c-42d8-97c2-ca8f2be63d26.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Apple Gouda Stuffed Chicken Breasts with Smoky Roasted Sweet Potatoes</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">15 minutes</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">30 minutes</span>
+                    <b>Servings: </b><span itemprop="recipeYield">Yield: 4 servings</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.rachelcooks.com/2016/03/07/apple-gouda-stuffed-chicken-breasts-smoky-roasted-sweet-potatoes/print/>Rachelcooks.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>For Chicken:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  large boneless, skinless chicken breasts (mine were 10 ounces each - shoot for 4-6 ounces per serving)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1.5</b>  ounces gouda cheese, thinly sliced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  large apple, thinly sliced (I used Honeycrisp - any firm apple will work)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon olive oil for chicken</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon fresh thyme, more as desired for garnish</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  fresh ground pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>For Sweet Potatoes:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  large sweet potatoes, peeled and diced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon olive oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon smoked paprika</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon fresh thyme leaves</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon sea salt</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Preheat the oven to 425 degrees Fahrenheit.</p><p></p><p>Spray a large baking dish or sheet pan with nonstick cooking spray. Split each chicken breast across but not through and open like a book (be careful, you can easily cut yourself doing this!). This is also known as butterflying. On one side of the chicken, lay out 7-8 thin apple slices followed by 4-5 slices of cheese. Sprinkle with 1/2 teaspoon fresh thyme. Fold over and drizzle with 1/2 teaspoon olive oil. Sprinkle with 1/4 teaspoon salt and 1/4 teaspoon pepper.</p><p></p><p>Place the chicken breast on sheet pan and top with another sprig of fresh thyme if desired.</p><p></p><p>In a bowl, mix diced sweet potatoes with olive oil, smoked paprika, 1 teaspoon thyme leaves and sea salt until evenly coated. Arrange sweet potatoes in a single layer around chicken breasts.</p><p></p><p>Bake for 20 minutes and then stir sweet potatoes.</p><p></p><p>Continue to bake until the juices run clear from chicken and internal temperature of chicken registers at 165 degrees, about 10 additional minutes. Sweet potatoes should be fork tender.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+
+            <h1 itemprop="name" class="name">Simple Vanilla Buttercream Frosting</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">15 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">15 min</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">about 2 cups frosting</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.foodnetwork.com/recipes/alton-brown/simple-vanilla-buttercream-frosting.html>Foodnetwork.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>6</b>  ounces unsalted butter, room temperature</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  ounces shortening</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  whole egg, room temperature</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound confectioners' sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon vanilla extract</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Place the butter and shortening into the bowl of a stand mixer and, using the paddle attachment, cream the butter on high until light and fluffy, approximately 3 to 4 minutes. Add the egg and beat until well combined, approximately 1 minute. Turn off the mixer and add 1/2 cup of the sugar. Mix on low until combined. Stop to scrape down the sides of the bowl. Repeat until all of the sugar has been incorporated. Add the vanilla and continue to beat until the frosting is smooth and light, approximately 2 to 3 minutes. Use immediately or store in an airtight container at room temperature for up to 4 hours or refrigerate for up to a week. Bring to room temperature before using.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

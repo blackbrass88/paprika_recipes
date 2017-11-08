@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://assets.bonappetit.com/photos/57dac9344caff61056fa7be3/master/w_10,c_limit/fridge-dive-pesto-pasta.jpg">
+                            <img src="../Images/0f4e9b0b-46bc-4c57-b514-b661679672fb.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Fridge-Dive Pesto Pasta</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Servings: </b><span itemprop="recipeYield">4 servings</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.bonappetit.com/recipe/fridge-dive-pesto-pasta>Bonappetit.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>½</b>  red onion, quartered through root end</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>8</b>  cups (lightly packed) torn mixed greens and tender herbs</li>
+                    <li itemprop="recipeIngredient" class="ingredient">Kosher salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>¼</b>  cup toasted sesame seeds, plus more for serving</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>½</b>  cup grated ricotta salata (salted dry ricotta), divided</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  tablespoons plus ¼ cup olive oil; plus more for drizzling</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>8</b>  garlic cloves, smashed</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>12</b>  ounces tripoline or mafaldine (wavy-edged ribbon pasta) or fusilli (spiral-shaped pasta)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons unsalted butter</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Cook onion and mixed greens and herbs in a large pot of boiling salted water until tender, about 2 minutes. Using a spider or tongs, transfer to a bowl of ice water and swish around in the water to cool down as quickly as possible (this helps retain the bright color). Drain and gently squeeze to remove excess liquid, then press between a double layer of paper towels to remove as much remaining liquid as possible. Reserve pot with greens cooking liquid.</p><p></p><p>Process ¼ cup sesame seeds in a food processor until finely ground. Add onion and greens mixture and ¼ cup ricotta salata and process until a coarse paste forms. With motor running, stream in 3 Tbsp. oil and process, adding water by the tablespoonful if needed to thin, until pesto is very smooth.</p><p></p><p>Heat ¼ cup oil in a large Dutch oven or other heavy pot over medium. Add garlic and cook, stirring often, until golden brown, about 5 minutes. Add pesto and cook, stirring, until sauce looks like most of the moisture has been cooked out, about 1 minute.</p><p></p><p>Meanwhile, bring reserved pot of greens cooking liquid to a boil and cook pasta, stirring occasionally, until very al dente, about 3 minutes less than package directions.</p><p></p><p>Using tongs, transfer pasta to pot with pesto and add ½ cup pasta cooking liquid. Cook, tossing, until each strand of pasta is coated. Remove from heat, add butter, and toss to combine.</p><p></p><p>Divide pasta among bowls. Top with more sesame seeds and remaining ¼ cup ricotta salata and drizzle with oil.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories (kcal) 720 Fat (g) 39 Saturated Fat (g) 9 Cholesterol (mg) 30 Carbohydrates (g) 72 Dietary Fiber (g) 2 Total Sugars (g) 5 Protein (g) 18 Sodium (mg) 135 ...Read More</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="https://s0.wp.com/i/blank.jpg">
+                            <img src="../Images/317c366f-768e-4dd6-abf9-9cc1464eef89.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">YOUR HEALTHY PLATE: Muffin-Y Goodness</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://yourhealthisonyourplate.com/2016/03/your-healthy-plate-muffin-y-goodness/>Yourhealthisonyourplate.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  large eggs</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  medium bananas</li>
+                    <li itemprop="recipeIngredient" class="ingredient">one-half pint blueberries or blackberries</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons olive oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  mini-muffin tin</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Preheat oven to 375F. Crack the eggs into a medium bowl and mix well. Mash the bananas, pour them into the eggs, and mix well.</p><p></p><p>Place a drop of olive oil into each mini-muffin tin, and use a finger to lightly oil the bottom and sides of each mini-muffin tin.</p><p></p><p>Slip a few berries into each tin. Pour the egg mixture over the berries, filling 2/3 full. Tap the muffin tin gently to remove excess air, and bake for 12 minutes until eggs are set. Makes 12-15 mini-muffins.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>
